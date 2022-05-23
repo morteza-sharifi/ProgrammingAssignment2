@@ -4,11 +4,6 @@
 makeCacheMatrix <- function(x = matrix()) {
   #If it has a value equal to null
   i <<- NULL
-  set <- function(y) 
-  {
-  x <<- y
-  i <<- NULL
-  }
   
 get <- function() x
 
@@ -16,6 +11,12 @@ setinverse <- function(inverse) i <<- inverse
 
 getinverse <- function() i
 
+ set <- function(y) 
+  {
+  x <<- y
+  i <<- NULL
+  }
+  
 list(set = set , get = get, setinverse = setinverse , getinverse = getinverse)
 
 # Return the matrix to get the inverse of x 
