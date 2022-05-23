@@ -18,6 +18,7 @@ getinverse <- function() i
   }
   
 list(set = set , get = get, setinverse = setinverse , getinverse = getinverse)
+  }
 
 # Return the matrix to get the inverse of x 
 #by clicking in the makeCacheMatrix function
